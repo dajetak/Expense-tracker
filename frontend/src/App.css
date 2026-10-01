@@ -1,0 +1,56 @@
+.app {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+header {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 20px;
+  margin-bottom: 32px;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  color: #2563eb; /* Акцентный синий цвет заголовка */
+  line-height: 1.2;
+}
+
+header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.app section {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.app section h2 {
+  margin: 0 0 12px 0;
+  color: #0f172a;
+  font-size: 1.35rem;
+}
+
+.app section p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* Адаптивность под узкие экраны смартфонов */
+@media (max-width: 480px) {
+  .app {
+    padding: 16px 12px;
+  }
+
+  .app section {
+    padding: 16px;
+  }
+}
